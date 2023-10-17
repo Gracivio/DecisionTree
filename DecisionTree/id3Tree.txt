@@ -1,0 +1,34 @@
+digraph Tree {
+2[label = yes]
+4[label = yes]
+6[label = yes]
+7[label = no]
+5[label="feature = touch\ngain = 1.0\n samples = 2\n value = yes: 1no: 1"]
+5->6[labeldistance=2.5, labelangle=-15, headlabel="hard"]
+5->7[labeldistance=2.5, labelangle=-15, headlabel="soft sticky"]
+
+3[label="feature = color\ngain = 0.5849625007211563\n samples = 3\n value = yes: 2no: 1"]
+3->4[labeldistance=2.5, labelangle=-15, headlabel="green"]
+3->5[labeldistance=2.5, labelangle=-15, headlabel="black"]
+
+8[label = yes]
+3->8[labeldistance=2.5, labelangle=-15, headlabel="white"]
+9[label = no]
+1[label="feature = root\ngain = 0.45810589515712374\n samples = 9\n value = yes: 7no: 2"]
+1->2[labeldistance=2.5, labelangle=-15, headlabel="coiled"]
+1->3[labeldistance=2.5, labelangle=-15, headlabel="slightly coiled"]
+1->9[labeldistance=2.5, labelangle=-15, headlabel="hard"]
+
+11[label = yes]
+12[label = no]
+10[label="feature = touch\ngain = 0.7219280948873623\n samples = 5\n value = yes: 1no: 4"]
+10->11[labeldistance=2.5, labelangle=-15, headlabel="soft sticky"]
+10->12[labeldistance=2.5, labelangle=-15, headlabel="hard"]
+
+13[label = no]
+0[label="feature = texture\ngain = 0.3805918973682686\n samples = 17\n value = yes: 8no: 9"]
+0->1[labeldistance=2.5, labelangle=-15, headlabel="clear"]
+0->10[labeldistance=2.5, labelangle=-15, headlabel="slightly blurry"]
+0->13[labeldistance=2.5, labelangle=-15, headlabel="blurry"]
+
+}

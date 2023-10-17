@@ -1,0 +1,10 @@
+digraph Tree {
+1[label = yes]
+2[label = yes]
+3[label = no]
+0[label="feature = color\ngini_index = 0.35000000000000003\n samples = 10\n value = yes: 5no: 5"]
+0->1[labeldistance=2.5, labelangle=-15, headlabel="green"]
+0->2[labeldistance=2.5, labelangle=-15, headlabel="black"]
+0->3[labeldistance=2.5, labelangle=-15, headlabel="white"]
+
+}
